@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="718.0" prefWidth="964.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ServerPortFrameController">
+    <children>
+        <Button fx:id="ConnectBtn" layoutX="217.0" layoutY="558.0" mnemonicParsing="false" onAction="#ConnectFunc" style="-fx-font-size: 16px; -fx-background-color: #5F9EA0; -fx-text-fill: white; -fx-background-radius: 15;" text="Connect" />
+        <TextField fx:id="portxt" layoutX="149.0" layoutY="191.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color:  transparent; -fx-border-color: #ffffff; -fx-border-radius: 2em; -fx-text-fill: #f5f5f5;" />
+        <Label layoutX="57.0" layoutY="191.0" style="-fx-font-size: 18px; -fx-text-fill: #5F9EA0;" text="Port:" />
+        <Label layoutX="66.0" layoutY="154.0" style="-fx-font-size: 18px; -fx-text-fill: #5F9EA0;" text="IP:" />
+        <Label layoutX="57.0" layoutY="108.0" style="-fx-font-size: 18px; -fx-text-fill: #5F9EA0;" text="Name:" />
+        <Label layoutY="608.0" prefHeight="27.0" prefWidth="233.0" style="-fx-font-size: 18px; -fx-text-fill: #5F9EA0;" text="Connection Status:" />
+        <Label layoutX="26.0" layoutY="71.0" prefHeight="27.0" prefWidth="341.0" style="-fx-font-size: 18px; -fx-text-fill: #5F9EA0;" text="Network connectivity information" />
+        <Label fx:id="ConnLabel" layoutX="227.0" layoutY="613.0" style="-fx-font-size: 16px; -fx-text-fill: #24C6DC;" text="Disconnected" />
+        <Label fx:id="NameLabel" layoutX="141.0" layoutY="111.0" style="-fx-font-size: 14px; -fx-text-fill: white;" />
+        <Label fx:id="IPLabel" layoutX="141.0" layoutY="147.0" style="-fx-font-size: 14px; -fx-text-fill: white;" />
+        <Text layoutX="71.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30px; -fx-fill: #5F9EA0; -fx-font-weight: bold;" text="Go Nature" textAlignment="CENTER" wrappingWidth="186.3170166015625" />
+        <Label layoutX="369.0" layoutY="24.0" prefHeight="71.0" prefWidth="227.0" style="-fx-font-size: 24px; -fx-text-fill: #5F9EA0;" text="Clients Status" />
+        <Button fx:id="btn" layoutX="579.0" layoutY="94.0" mnemonicParsing="false" onAction="#btnRefresh" style="-fx-font-size: 16px; -fx-background-color: #5F9EA0; -fx-text-fill: white; -fx-background-radius: 15;" text="Refresh" />
+        <TableView fx:id="onlineclients" layoutX="372.0" layoutY="144.0" prefHeight="481.0" prefWidth="508.0">
+            <columns>
+                <TableColumn fx:id="ipCol" prefWidth="120.0" text="IP" />
+                <TableColumn fx:id="hostCol" minWidth="0.0" prefWidth="186.0" text="HOST" />
+                <TableColumn fx:id="statusCol" minWidth="0.0" prefWidth="201.0" text="STATUS" />
+            </columns>
+        </TableView>
+        <Label layoutX="50.0" layoutY="248.0" text="DB name" textFill="CADETBLUE" />
+        <Label layoutX="24.0" layoutY="307.0" text="DB user name" textFill="CADETBLUE" />
+        <Label layoutX="34.0" layoutY="376.0" text="DB password" textFill="CADETBLUE" />
+        <TextField fx:id="dbNameTextField" focusTraversable="false" layoutX="149.0" layoutY="242.0" prefHeight="30.0" prefWidth="180.0" promptText="DB name" style="-fx-background-color:  transparent; -fx-border-color: #ffffff; -fx-border-radius: 2em; -fx-text-fill: #f5f5f5;" />
+        <TextField fx:id="dbUsernameTextField" focusTraversable="false" layoutX="159.0" layoutY="301.0" prefHeight="30.0" prefWidth="180.0" promptText="DB user name" style="-fx-background-color:  transparent; -fx-border-color: #ffffff; -fx-border-radius: 2em; -fx-text-fill: #f5f5f5;" />
+        <PasswordField fx:id="dbPasswordTextField" layoutX="159.0" layoutY="370.0" prefHeight="30.0" prefWidth="180.0" promptText="DB password" style="-fx-background-color: transparent; -fx-border-color: #ffffff; -fx-border-radius: 2em; -fx-text-fill: #f5f5f5;" text="morad12345" />
+        <Button fx:id="importBtn" layoutX="783.0" layoutY="42.0" mnemonicParsing="false" onAction="#ConnecttoImportBtnFunc" style="-fx-font-size: 16px; -fx-background-color: #5F9EA0; -fx-text-fill: white; -fx-background-radius: 15;" text="Import Users Details" />
+    </children>
+</Pane>

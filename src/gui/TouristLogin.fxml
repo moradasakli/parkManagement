@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="700.0" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TouristLoginController">
+   <children>
+      <Text fill="CADETBLUE" layoutX="238.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TouristLogin">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <Label layoutX="190.0" layoutY="164.0" prefHeight="35.0" prefWidth="42.0" text="ID:" textFill="CADETBLUE">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextField fx:id="idTxt" layoutX="249.0" layoutY="169.0" prefHeight="26.0" prefWidth="202.0" />
+      <Button fx:id="nextBtn" layoutX="458.0" layoutY="325.0" mnemonicParsing="false" onAction="#openTouristHomePage" prefWidth="100.0" style="-fx-background-color: #5F9EA0; -fx-text-fill: white;" text="Next">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="backBt" layoutX="149.0" layoutY="325.0" mnemonicParsing="false" onAction="#returnToHomePage" prefWidth="100.0" style="-fx-background-color: #960c0c; -fx-text-fill: white;" text="Back">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label fx:id="idLbl" layoutX="50.0" layoutY="420.0" prefHeight="17.0" prefWidth="280.0" textFill="WHITE">
+      </Label>
+   </children>
+</AnchorPane>

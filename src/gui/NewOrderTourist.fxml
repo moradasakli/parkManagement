@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.NewOrderTouristController">
+   <children>
+      <Text fill="CADETBLUE" layoutX="276.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make New Order" wrappingWidth="310.19997507333755">
+         <font>
+            <Font size="39.0" />
+         </font></Text>
+      <ChoiceBox fx:id="parkCB" layoutX="165.0" layoutY="130.0" prefWidth="150.0" style="-fx-text-fill: white;" />
+      <TextField fx:id="NumberOfVisitorstxtField" layoutX="165.0" layoutY="277.0" text="1" />
+      <Button fx:id="BackBtn" layoutX="153.0" layoutY="442.0" mnemonicParsing="false" onAction="#ReturnToRelaventPageFunc" style="-fx-background-color: #960c0c; -fx-text-fill: white;" text="Back" />
+      <Button fx:id="BookBtn" layoutX="655.0" layoutY="442.0" mnemonicParsing="false" onAction="#BookNewOrderFunc" style="-fx-background-color: #5F9EA0; -fx-text-fill: white;" text="Book" />
+      <Label fx:id="ChooseParkLbl" layoutX="60.0" layoutY="134.0" text="Choose Park : " textFill="CADETBLUE" />
+      <Label fx:id="DateLbl" layoutX="80.0" layoutY="191.0" text="Date : " textFill="CADETBLUE" />
+      <Label fx:id="NumberOfVisitorsLbl" layoutX="25.0" layoutY="281.0" text="Number Of Visitors : " textFill="CADETBLUE" />
+      <DatePicker fx:id="dateDP" layoutX="165.0" layoutY="187.0" />
+      <Label fx:id="timeLbl" layoutX="77.0" layoutY="236.0" prefHeight="17.0" prefWidth="41.0" text="Time :" textFill="CADETBLUE" />
+      <ComboBox fx:id="timeCB" layoutX="165.0" layoutY="232.0" prefWidth="150.0" style="-fx-text-fill: white;" />
+      <Label fx:id="MsgLbl" layoutX="104.0" layoutY="334.0" prefHeight="73.0" prefWidth="598.0" textFill="CADETBLUE" />
+      <CheckBox fx:id="orgnaizedCB" layoutX="161.0" layoutY="325.0" mnemonicParsing="false" text="Organized Group ?" textFill="CADETBLUE" />
+   </children>
+</AnchorPane>

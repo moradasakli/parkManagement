@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="1257.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ParkMangerController">
+   <children>
+      <Label fx:id="EditLbl" layoutX="54.0" layoutY="96.0" text="Edit Park Information" textFill="#5F9EA0" />
+      <TextField fx:id="AskTxtField" layoutX="110.0" layoutY="161.0" prefHeight="25.0" prefWidth="81.0" />
+      <Button fx:id="AskBtn" layoutX="133.0" layoutY="197.0" mnemonicParsing="false" onAction="#AskPremission" style="-fx-background-color: #5f9ea0;" text="Ask" textFill="WHITE" />
+      <Label layoutX="874.0" layoutY="96.0" prefHeight="17.0" prefWidth="112.0" text="Generate Reports" textFill="#5F9EA0" />
+      <Button fx:id="send_report_btn" layoutX="1014.0" layoutY="185.0" mnemonicParsing="false" onAction="#SendReport" style="-fx-background-color: #5f9ea0;" text="Send" textFill="#eae7e7" />
+      <Button fx:id="CheckAvailableSpotBtn" layoutX="332.0" layoutY="507.0" mnemonicParsing="false" onAction="#ShowSpots" style="-fx-background-color: #5f9ea0;" text="Check Available Spots" textFill="WHITE" />
+      <Button fx:id="BackBtn" layoutX="48.0" layoutY="578.0" mnemonicParsing="false" onAction="#RetunToRelaventPage" style="-fx-background-color: #a10a0a;" text="logout" textFill="#efefef" />
+      <Button fx:id="ShowRequestsBtn" layoutX="332.0" layoutY="180.0" mnemonicParsing="false" onAction="#ShowRequests" style="-fx-background-color: #5f9ea0;" text="Show Requests : " textFill="WHITE" />
+      <Label fx:id="show_requests_label" layoutX="277.0" layoutY="218.0" prefHeight="17.0" prefWidth="313.0" />
+      <Label fx:id="ask_request_label" layoutX="282.0" layoutY="125.0" prefHeight="17.0" prefWidth="327.0" />
+     <TableView fx:id="requestTable" layoutX="48.0" layoutY="247.0" prefHeight="244.0" prefWidth="946.0">
+        <columns>
+          <TableColumn fx:id="request_number" prefWidth="130.0" text="number" />
+            <TableColumn fx:id="park_number" prefWidth="140.0" text="park" />
+            <TableColumn fx:id="new_value" minWidth="0.0" prefWidth="106.0" text="new value" />
+            <TableColumn fx:id="status" minWidth="0.0" prefWidth="142.0" text="status" />
+            <TableColumn fx:id="is_approved" prefWidth="157.0" text="is aproved" />
+          <TableColumn fx:id="request_type" minWidth="0.0" prefWidth="270.0" text="type" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="EditCBox" layoutX="75.0" layoutY="127.0" prefHeight="25.0" prefWidth="195.0" />
+      <ComboBox fx:id="report_type_combo" layoutX="841.0" layoutY="132.0" prefWidth="150.0" />
+      <Label fx:id="send_reports_label" layoutX="728.0" layoutY="223.0" prefHeight="17.0" prefWidth="497.0" />
+      <Label fx:id="avaliable_spots_label" layoutX="457.0" layoutY="549.0" prefHeight="17.0" prefWidth="208.0" />
+      <Button fx:id="refresh_btn" layoutX="492.0" layoutY="180.0" mnemonicParsing="false" onAction="#ShowRequests" style="-fx-background-color: #5f9ea0;" text="Refresh" textFill="#f4eeee" />
+      <ComboBox fx:id="report_month_combo" layoutX="841.0" layoutY="185.0" prefWidth="150.0" />
+      <Label layoutX="764.0" layoutY="183.0" text="month :" textFill="CADETBLUE" />
+      <Text fill="#4fb2f8" layoutX="372.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ParkManager" wrappingWidth="278.13671875">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Text>
+      <Label layoutX="732.0" layoutY="134.0" text="Report Type" />
+   </children>
+</AnchorPane>

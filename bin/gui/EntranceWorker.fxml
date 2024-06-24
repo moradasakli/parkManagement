@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="700.0" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.EntranceWorkerController">
+   <children>
+      <Text fill="CADETBLUE" layoutX="210.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entrance Worker HomePage">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="CheckAvailableSpotsBtn" layoutX="58.0" layoutY="485.0" mnemonicParsing="false" onAction="#CheckSpotsFunc" prefHeight="25.0" prefWidth="215.0" style="-fx-background-color: #5F9EA0; -fx-text-fill: white;" text="Check Available Spots">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="ShowBtn" layoutX="270.0" layoutY="276.0" mnemonicParsing="false" onAction="#ShowRecipeFunc" prefWidth="100.0" style="-fx-background-color: #5F9EA0; -fx-text-fill: white;" text="Show">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="Backbtn" layoutX="65.0" layoutY="707.0" mnemonicParsing="false" onAction="#ReturnToRelaventPageFunc" prefWidth="100.0" style="-fx-background-color: #960c0c; -fx-text-fill: white;" text="Logout">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <TextField fx:id="RecipeTxtField" layoutX="54.0" layoutY="187.0" prefHeight="26.0" prefWidth="202.0" promptText="Enter Receipt Number" />
+       <Label fx:id="avaliable_spots_label" layoutX="54.0" layoutY="542.0" prefHeight="17.0" prefWidth="510.0">
+       </Label>
+       <Label fx:id="price_label" layoutX="376.0" layoutY="181.0" prefHeight="304.0" prefWidth="421.0" textFill="WHITE">
+       </Label>
+      <Label fx:id="RecipeNumberLbl" layoutX="49.0" layoutY="156.0" prefHeight="18.0" prefWidth="366.0" text="Enter receipt number to take action" textFill="CADETBLUE">
+      </Label>
+      <Label layoutX="54.0" layoutY="59.0" prefWidth="80.0" text="Welcome :" textFill="CADETBLUE">
+      </Label>
+      <Label fx:id="welcomeLbl" layoutX="135.0" layoutY="59.0" prefHeight="17.0" prefWidth="325.0" textFill="WHITE">
+      </Label>
+      <Button fx:id="entryBtn" layoutX="150.0" layoutY="276.0" mnemonicParsing="false" onAction="#enterPark" prefWidth="100.0" style="-fx-background-color: #5F9EA0; -fx-text-fill: white;" text="Enter Park">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="exitBtn" layoutX="34.0" layoutY="276.0" mnemonicParsing="false" onAction="#exitpark" prefWidth="100.0" style="-fx-background-color: #5F9EA0; -fx-text-fill: white;" text="Exit Park">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ComboBox fx:id="timeexitCB" layoutX="85.0" layoutY="116.0" prefWidth="130.0" />
+      <Button layoutX="441.0" layoutY="623.0" mnemonicParsing="false" onAction="#casualVisit" prefHeight="25.0" prefWidth="178.0" style="-fx-background-color: #5F9EA0; -fx-text-fill: white;" text="Casual Visit">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

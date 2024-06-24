@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="868.0" prefWidth="1237.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TouristAlternativeOptionController">
+   <children>
+      <Label layoutX="208.0" layoutY="27.0" text="Alternative Option Page" textFill="CADETBLUE">
+         <font>
+            <Font size="48.0" />
+         </font></Label>
+      <Button fx:id="waitingListBtn" layoutX="223.0" layoutY="785.0" mnemonicParsing="false" onAction="#enterWaitingList" style="-fx-background-color: #5F9EA0; -fx-text-fill: white; -fx-background-radius: 15;" text="Enter WaitingList" />
+      <Button fx:id="showDatesBtn" layoutX="417.0" layoutY="785.0" mnemonicParsing="false" onAction="#showDates" style="-fx-background-color: #5F9EA0; -fx-text-fill: white; -fx-background-radius: 15;" text="Show Available dates" />
+      <Button fx:id="backBtn" layoutX="83.0" layoutY="785.0" mnemonicParsing="false" onAction="#ReturnRelevantPage" style="-fx-background-color: #5F9EA0; -fx-text-fill: white; -fx-background-radius: 15;" text="Edit Order" />
+      <Button fx:id="pickDateBtn" layoutX="1106.0" layoutY="721.0" mnemonicParsing="false" onAction="#pickDateFunc" style="-fx-background-color: #24C6DC; -fx-text-fill: white; -fx-background-radius: 15;" text="PickDate" />
+      <Label fx:id="MsgLbl" layoutX="30.0" layoutY="574.0" prefHeight="71.0" prefWidth="679.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelOrderBtn" layoutX="1057.0" layoutY="785.0" mnemonicParsing="false" onAction="#cancelOrder" style="-fx-background-color: #24C6DC; -fx-text-fill: white; -fx-background-radius: 15;" text="Return to your page" />
+      <Label layoutX="99.0" layoutY="180.0" prefHeight="17.0" prefWidth="52.0" text="Name :" textFill="CADETBLUE" />
+      <Label layoutX="104.0" layoutY="234.0" text="Park :" textFill="CADETBLUE" />
+      <Label layoutX="103.0" layoutY="292.0" text="Date :" textFill="CADETBLUE" />
+      <Label layoutX="103.0" layoutY="345.0" text="Time :" textFill="CADETBLUE" />
+      <Label layoutX="65.0" layoutY="393.0" text="Number Of Visitors :" textFill="CADETBLUE" />
+      <Label layoutX="103.0" layoutY="439.0" text="Price :" textFill="CADETBLUE" />
+      <Label fx:id="OrderNumberLbl" layoutX="241.0" layoutY="104.0" prefHeight="17.0" prefWidth="186.0" textFill="WHITE" />
+      <Label fx:id="FullNameLbl" layoutX="276.0" layoutY="180.0" prefHeight="17.0" prefWidth="134.0" textFill="WHITE" />
+      <Label fx:id="ParkLbl" layoutX="276.0" layoutY="234.0" prefHeight="17.0" prefWidth="134.0" textFill="WHITE" />
+      <Label fx:id="DateLbl" layoutX="276.0" layoutY="292.0" prefHeight="17.0" prefWidth="174.0" textFill="WHITE" />
+      <Label fx:id="TimeLbl" layoutX="276.0" layoutY="345.0" prefHeight="17.0" prefWidth="149.0" textFill="WHITE" />
+      <Label fx:id="NumOfVisitorsLbl" layoutX="276.0" layoutY="393.0" prefHeight="17.0" prefWidth="157.0" textFill="WHITE" />
+      <Label fx:id="PriceLbl" layoutX="276.0" layoutY="439.0" prefHeight="17.0" prefWidth="122.0" textFill="WHITE" />
+      <TableView fx:id="listOfAvailableDates" layoutX="850.0" layoutY="47.0" prefHeight="655.0" prefWidth="318.0">
+         <columns>
+            <TableColumn fx:id="optionCol" prefWidth="75.0" text="Option " />
+            <TableColumn fx:id="dateCol" prefWidth="123.0" text="Date" />
+            <TableColumn fx:id="timeCol" prefWidth="119.0" text="Time" />
+         </columns>
+      </TableView>
+      <Label fx:id="optionLbl" layoutX="869.0" layoutY="725.0" prefHeight="17.0" prefWidth="52.0" text="Option :" textFill="WHITE" />
+      <TextField fx:id="optionTxtField" layoutX="962.0" layoutY="721.0" prefHeight="25.0" prefWidth="95.0" />
+   </children>
+</AnchorPane>

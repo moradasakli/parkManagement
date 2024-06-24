@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="700.0" prefWidth="975.0" stylesheets="@all.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ServiceRepresentativeController">
+   <children>
+      <Text fill="CADETBLUE" layoutX="131.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service Representative Home Page">
+         <font>
+            <Font size="44.0" />
+         </font></Text>
+      <TextField fx:id="AddTravelGuideTxtField" layoutX="266.0" layoutY="145.0" style="-fx-text-fill: #5F9EA0;" />
+      <Button fx:id="BackBtn" layoutX="230.0" layoutY="250.0" mnemonicParsing="false" onAction="#ReturnToRelaventPageFunc" style="-fx-background-color: #960d0d;" text="logout" textFill="#f4ecec" />
+      <Button fx:id="AddBtn" layoutX="434.0" layoutY="250.0" mnemonicParsing="false" onAction="#AddTravelGuideFunc" style="-fx-background-color: #5f9ea0;" text="Add" textFill="#eceaea" />
+      <Label fx:id="AddTravelGuiedLbl" layoutX="94.0" layoutY="147.0" text="Add Travel Guied : " textFill="#5F9EA0" />
+      <Label fx:id="SuccesOrErrorLabel" layoutX="94.0" layoutY="119.0" prefHeight="17.0" prefWidth="381.0" textFill="#5F9EA0" />
+   </children>
+</AnchorPane>

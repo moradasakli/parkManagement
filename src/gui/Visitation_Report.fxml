@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Visitation_ReportController">
+   <children>
+      <BarChart fx:id="bar_chart" layoutX="88.0" layoutY="157.0" prefHeight="487.0" prefWidth="669.0">
+        <xAxis>
+          <CategoryAxis prefHeight="14.0" prefWidth="456.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="backbtn" layoutX="137.0" layoutY="695.0" mnemonicParsing="false" onAction="#ReturnToRelaventPage" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #5F9EA0;" text="Back" textFill="#efeaea">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Label fx:id="month_label" layoutX="37.0" layoutY="30.0" />
+      <Text fill="#5fcfee" layoutX="230.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visitation Reports" wrappingWidth="361.775390625">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

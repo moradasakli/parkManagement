@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CasualVisitController">
+   <children>
+      <Label layoutX="243.0" layoutY="14.0" prefHeight="26.0" prefWidth="174.0" text="Casual Visit">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="113.0" text="Orderer Id : ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="165.0" text="Number of Visitors:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="213.0" text="Mail :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="261.0" text="Phone:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="orderIdLbl" layoutX="271.0" layoutY="112.0" prefHeight="26.0" prefWidth="220.0" promptText="Orderer Id" />
+      <TextField fx:id="num_of_visitors" layoutX="271.0" layoutY="164.0" prefHeight="26.0" prefWidth="220.0" promptText="Number of Visitors" />
+      <TextField fx:id="mailLbl" layoutX="271.0" layoutY="212.0" prefHeight="26.0" prefWidth="220.0" promptText="Mail" />
+      <TextField fx:id="phoneLbl" layoutX="271.0" layoutY="260.0" prefHeight="26.0" prefWidth="220.0" promptText="Phone" />
+      <Button fx:id="visitLbl" layoutX="498.0" layoutY="343.0" mnemonicParsing="false" onAction="#visitBtnFunc" prefHeight="37.0" prefWidth="63.0" style="-fx-background-color: #E0FFFF; -fx-text-fill: #5F9EA0; -fx-background-radius: 20px;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+         Visit
+      </Button>
+      <Button fx:id="backLbl" layoutX="212.0" layoutY="343.0" mnemonicParsing="false" onAction="#backBtnFunc" prefHeight="37.0" prefWidth="63.0" style="-fx-background-color: #E0FFFF; -fx-text-fill: #5F9EA0; -fx-background-radius: 20px;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+         Back
+      </Button>
+      <Label fx:id="errorLbl" layoutX="202.0" layoutY="310.0" prefHeight="18.0" prefWidth="417.0" textFill="WHITE" />
+   </children>
+</AnchorPane>

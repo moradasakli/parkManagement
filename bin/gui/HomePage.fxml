@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #5F9EA0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.HomePageController">
+   <children>
+      <AnchorPane layoutX="50.0" layoutY="50.0" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #5F9EA0; -fx-border-width: 2px; -fx-border-radius: 10px;">
+         <children>
+            <Text fill="#5F9EA0" layoutX="125.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HomePage - LoginPage">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="employeeBtn" layoutX="75.0" layoutY="87.0" mnemonicParsing="false" onAction="#employeeFunc" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #5F9EA0; -fx-text-fill: white; -fx-background-radius: 20px;">
+                <effect>
+                    <DropShadow />
+                </effect>
+                Employee Login
+            </Button>
+            <Button fx:id="touristBtn" layoutX="300.0" layoutY="87.0" mnemonicParsing="false" onAction="#touristFunc" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #5F9EA0; -fx-text-fill: white; -fx-background-radius: 20px;">
+                <effect>
+                    <DropShadow />
+                </effect>
+                Tourist Login
+            </Button>
+            <Button fx:id="backBtn" layoutX="25.0" layoutY="240.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #5F9EA0; -fx-text-fill: white; -fx-background-radius: 20px;">
+                <effect>
+                    <DropShadow />
+                </effect>
+                Back
+            </Button>
+            <Button fx:id="notSignedBtn" layoutX="144.0" layoutY="164.0" mnemonicParsing="false" onAction="#notSignedFunc" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #5F9EA0; -fx-text-fill: white; -fx-background-radius: 20px;">
+                <effect>
+                    <DropShadow />
+                </effect>
+                Not signed up? Register now
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

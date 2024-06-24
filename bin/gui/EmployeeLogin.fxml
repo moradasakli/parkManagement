@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.EmployeeLoginController">
+   <children>
+      <Label layoutX="163.0" layoutY="40.0" text="Employee Login Page" textFill="CADETBLUE">
+         <font>
+            <Font size="29.0" />
+         </font></Label>
+      <Label layoutX="142.0" layoutY="141.0" text="Username:" />
+      <Label layoutX="144.0" layoutY="191.0" text="Password:" />
+      <TextField fx:id="userNameTxt" layoutX="226.0" layoutY="137.0" text="majd_d_m" />
+      <TextField fx:id="passwordTxt" layoutX="226.0" layoutY="187.0" text="12345" />
+      <Button fx:id="nextBtn" layoutX="400.0" layoutY="266.0" mnemonicParsing="false" onAction="#openRelevantPage" style="-fx-background-color: #5F9EA0; -fx-text-fill: white;" text="Next" />
+      <Button fx:id="backtn" layoutX="156.0" layoutY="266.0" mnemonicParsing="false" onAction="#returnToHomePage" style="-fx-background-color: #5F9EA0; -fx-text-fill: white;" text="Back" />
+      <Label fx:id="errorLabel" layoutX="209.0" layoutY="223.0" prefHeight="17.0" prefWidth="180.0" />
+   </children>
+</AnchorPane>

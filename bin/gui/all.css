@@ -1,0 +1,17 @@
+.root {
+    -fx-background-image: url('r1.jpg'); /* Update this path if necessary */
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.text {
+    -fx-fill: #000000;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+.Label {
+    -fx-text-fill: black;
+    -fx-font-size: 16px;
+
+}

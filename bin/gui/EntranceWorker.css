@@ -1,0 +1,69 @@
+/* Styles for AnchorPane */
+AnchorPane {
+    -fx-background-color: #222831; /* Set background color */
+}
+
+/* Styles for Text */
+Text {
+    -fx-fill: #00adb5; /* Text color */
+    -fx-font-size: 36px; /* Font size */
+    -fx-font-family: "Arial Black", Arial, sans-serif; /* Font family */
+}
+
+/* Styles for Buttons */
+Button {
+    -fx-background-color: #00adb5; /* Button background color */
+    -fx-text-fill: #eeeeee; /* Button text color */
+    -fx-font-size: 16px; /* Font size */
+    -fx-font-weight: bold; /* Button text bold */
+    -fx-font-family: "Arial Black", Arial, sans-serif; /* Font family */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0, 0, 1); /* Button drop shadow */
+    -fx-background-radius: 25px; /* Button border radius */
+    -fx-padding: 10px 20px; /* Button padding */
+}
+
+/* Hover effect for Buttons */
+Button:hover {
+    -fx-background-color: #393e46; /* Hover background color */
+    -fx-cursor: hand; /* Change cursor on hover */
+}
+
+/* Styles for TextField */
+TextField {
+    -fx-prompt-text-fill: #eeeeee; /* Prompt text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-background-color: #30475e; /* Text field background color */
+    -fx-text-fill: #eeeeee; /* Text color */
+    -fx-background-radius: 25px; /* Text field border radius */
+    -fx-padding: 5px 10px; /* Text field padding */
+}
+
+/* Styles for Labels */
+Label {
+    -fx-text-fill: #eeeeee; /* Label text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-family: "Arial Black", Arial, sans-serif; /* Font family */
+}
+
+/* Styles for ComboBox */
+ComboBox {
+    -fx-font-size: 14px; /* Font size */
+    -fx-background-color: #30475e; /* Combo box background color */
+    -fx-text-fill: #eeeeee; /* Text color */
+    -fx-background-radius: 25px; /* Combo box border radius */
+    -fx-padding: 5px 10px; /* Combo box padding */
+}
+
+
+
+/* Styles for Welcome Label */
+#welcomeLbl {
+    -fx-text-fill: #00adb5; /* Welcome Label text color */
+    -fx-font-size: 16px; /* Font size */
+    -fx-font-family: "Arial Black", Arial, sans-serif; /* Font family */
+}
+
+/* Styles for DropShadow effect */
+.effect {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0, 0, 1); /* Drop shadow effect */
+}

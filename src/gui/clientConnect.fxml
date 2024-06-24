@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="700.0" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.clientConnectController">
+   <children>
+      <Text fill="CADETBLUE" layoutX="190.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connection Page">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <Button fx:id="connectBtn" layoutX="434.0" layoutY="349.0" mnemonicParsing="false" onAction="#connectFunc" prefWidth="100.0" style="-fx-background-color: #5F9EA0; -fx-text-fill: white;" text="Connect">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="cancelBtn" layoutX="118.0" layoutY="349.0" mnemonicParsing="false" onAction="#cancelFunc" prefWidth="100.0" style="-fx-background-color: #960c0c; -fx-text-fill: white;" text="Cancel">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label layoutX="195.0" layoutY="151.0" prefHeight="27.0" prefWidth="26.0" text="IP:" textFill="CADETBLUE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="187.0" layoutY="222.0" prefHeight="28.0" prefWidth="42.0" text="Port:" textFill="CADETBLUE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="ipTxt" layoutX="229.0" layoutY="152.0" prefHeight="26.0" prefWidth="202.0" text="10.0.0.9" />
+      <TextField fx:id="portTxt" layoutX="229.0" layoutY="223.0" prefHeight="26.0" prefWidth="202.0" text="5555" />
+      <Label fx:id="errorTxt" layoutX="50.0" layoutY="420.0" prefHeight="17.0" prefWidth="280.0" textFill="RED">
+      </Label>
+   </children>
+</AnchorPane>
